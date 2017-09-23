@@ -26,7 +26,7 @@ public class Triangle_Daniel extends Triangle {
 			return TriangleResult.TRIANGLE_EQUILATERAL;
 		}
 		
-		if (a == b && a != c || b == c && b != a)
+		if (a == b && a != c || b == c && b != a || c == a && c != b)
 		{
 			return TriangleResult.TRIANGLE_ISOSCELES;
 		}
