@@ -10,6 +10,7 @@ public class TriangleTRTest {
 	
 	@Test
 	public void testNotEqual() throws Exception {
+		
 		int a = 7;
 		int b = 5;
 		int c = 10;

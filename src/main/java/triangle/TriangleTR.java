@@ -6,6 +6,7 @@ public class TriangleTR extends Triangle {
 	public TriangleResult getTriangleResultForLenghts(int... lengths) {
 		// TODO Auto-generated method stub
 
+		
 		TriangleResult result = TriangleResult.UNKNOWN;
 
 		// assert lengths.length == 3;
