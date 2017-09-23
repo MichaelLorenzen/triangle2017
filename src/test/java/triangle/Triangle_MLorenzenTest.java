@@ -36,8 +36,12 @@ public class Triangle_MLorenzenTest {
 
 	@Test
 	public void testNegativeNumber() throws Exception {
-		TriangleResult result = triangle.getTriangleResultForLenghts(1, -2, 3);
-		assertThat(result).isEqualTo(TriangleResult.UNKNOWN);
+		TriangleResult result1 = triangle.getTriangleResultForLenghts(1, -2, 3);
+		assertThat(result1).isEqualTo(TriangleResult.UNKNOWN);
+		TriangleResult result2 = triangle.getTriangleResultForLenghts(-1, 2, 3);
+		assertThat(result2).isEqualTo(TriangleResult.UNKNOWN);
+		TriangleResult result3 = triangle.getTriangleResultForLenghts(1, 2, -3);
+		assertThat(result3).isEqualTo(TriangleResult.UNKNOWN);
 	}
 	
 	@Test
@@ -66,6 +70,10 @@ public class Triangle_MLorenzenTest {
 		assertThat(result3).isEqualTo(TriangleResult.TRIANGLE_NOT_EQUAL);
 	}
 
-
+	@Test
+	public void testNullInArguments() throws Exception {
+		TriangleResult result = triangle.getTriangleResultForLenghts(null);
+		assertThat(result).isEqualTo(TriangleResult.UNKNOWN);
+	}
 	
 }

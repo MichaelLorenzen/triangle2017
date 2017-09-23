@@ -6,8 +6,12 @@ public class Triangle_MLorenzen extends Triangle {
 	public TriangleResult getTriangleResultForLenghts(int... lengths) {
 		
 		// Argumente falsch
-		if (lengths.length != 3) {
+		if ( lengths == null || lengths.length != 3 ) {
 			return TriangleResult.UNKNOWN;
+		}
+		
+		for (Object o: lengths) {
+			if (o == null) return TriangleResult.UNKNOWN;
 		}
 		
 		int a = lengths[0];
