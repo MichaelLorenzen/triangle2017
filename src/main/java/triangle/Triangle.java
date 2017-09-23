@@ -1,4 +1,4 @@
-package edu.hskl.projects.triangle.triangle;
+package triangle;
 
 public abstract class Triangle {
 	
