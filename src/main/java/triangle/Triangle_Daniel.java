@@ -2,6 +2,7 @@ package triangle;
 
 public class Triangle_Daniel extends Triangle {
 
+	
 	@Override
 	public TriangleResult getTriangleResultForLenghts(int... lengths) {
 		

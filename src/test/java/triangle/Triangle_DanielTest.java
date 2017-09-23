@@ -10,6 +10,7 @@ public class Triangle_DanielTest {
 	
 	// UNKNOWN, TRIANGLE_NOT_EQUAL, TRIANGLE_EQUILATERAL, TRIANGLE_ISOSCELES;
 	
+	
 	@Test
 	public void testGetTriangleResultForLenghtsUNKNOWN1() throws Exception {
 		int a = 2;
